@@ -6,11 +6,14 @@ const connection = require("./db");
 
 
 
-app.use(express.json());
+
 
 const movieRouter = require("./routes/movie.routes");
 
 
+app.use(express.json());
+
+app.use("./movie", movieRouter);
 
 
 app.listen(8080, async () => {
