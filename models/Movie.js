@@ -7,6 +7,7 @@ const movieSchema = mongoose.Schema({
     genre: [String],
     director: [String],
     cast: [String],
-    plot: String
+    plot: String,
+    image: String
 });
 
