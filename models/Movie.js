@@ -8,6 +8,7 @@ const movieSchema = mongoose.Schema({
     director: [String],
     cast: [String],
     plot: String,
-    image: String
+    image: String,
+    rating: Number
 });
 
