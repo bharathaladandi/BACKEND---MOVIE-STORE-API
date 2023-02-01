@@ -6,6 +6,7 @@ const connection = require("./db");
 
 const movieRouter = require("./routes/movie.routes");
 
+const app = express();
 
 app.use(express.json());
 
