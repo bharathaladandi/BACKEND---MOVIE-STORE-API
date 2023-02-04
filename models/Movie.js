@@ -13,3 +13,4 @@ const movieSchema = mongoose.Schema({
     runtime: String
 });
 
+const MovieModel = mongoose.model("movie", movieSchema);
