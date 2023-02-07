@@ -14,3 +14,6 @@ const movieSchema = mongoose.Schema({
 });
 
 const MovieModel = mongoose.model("movie", movieSchema);
+
+
+module.exports = MovieModel;
