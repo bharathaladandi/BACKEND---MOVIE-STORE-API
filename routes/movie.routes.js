@@ -67,7 +67,12 @@ movieRouter.patch("/:title", async (req, res) => {
     let title = req.params.title;
     console.log('title:', title);
 
-    const movie = await MovieModel.findOneAndUpdate({ title }, req.body, { new: true });
+
+    const movie = await MovieModel.findOneAndUpdate(
+        { title },
+        req.body,
+        { new: true }
+    );
 
     res.send(movie);
 
